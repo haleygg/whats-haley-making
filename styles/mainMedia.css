@@ -1,0 +1,22 @@
+/* Haley Goldberg */
+
+/*I decided to get rid of the aside to make more room for the main section so it's more readable*/
+@media screen and (max-width: 650px){
+    aside{display: none;}
+
+    p{margin: 0.7em;}
+
+    section{width: 100%;}
+
+    h2{padding: 0.6em;}
+}
+
+/*I decided to add all the descriptions for small screens and make sure the imgs dont float left or right*/
+@media screen and (max-width: 430px) {
+
+    p{display: none;}
+
+    header img { display: none;}
+
+    img{float: none !important;}
+}

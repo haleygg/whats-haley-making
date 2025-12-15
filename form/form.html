@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!-- Haley Goldberg -->
+	<meta charset="utf-8">
+	
+	<link rel="icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/form.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Spicy+Rice&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zain&display=swap" rel="stylesheet">
+	
+	<title> What's Haley Making? </title>
+</head>
+
+<body>
+	<header>
+		<a href="../index.html"><img src="../images/logo.png" alt="knitting needles and yarn"></a>
+		<h1> What's Haley Making? </h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="../index.html"> Home </a></li>
+			<li><a href="../diy/diy.html"> DIY </a></li>
+			<li><a href="../makes/makes.html"> My Makes </a></li>
+			<li><a href="#" id="current"> Advice </a>
+		</ul>
+	</nav>
+	
+	<main>
+		<aside>
+			<h2>My Most Visited</h2>
+			<h3>Patterns</h3>
+			<ul>
+				<li><a href="https://www.pinterest.com/">Pinterest</a></li>
+				<li><a href="https://hobbii.com/product-patterns">Hobbii</a></li>
+				<li><a href="https://www.materialgrrrlz.com/free-patterns">Material Grrlz</a></li>
+			</ul>
+			<h3>Designers</h3>
+			<ul>
+				<li><a href="https://myfavouritethings-knitwear.com/">My Favourite Things Knitwear</a></li>
+				<li><a href="https://minigrustudios.com/">MiniGru Studios</a></li>
+				<li><a href="https://www.starcrossedknits.com/">Starcrossed Knits</a></li>
+			</ul>
+			<h3>Knitting Basics</h3>
+			<ul>
+				<li><a href="https://www.purlsoho.com/create/make-one-right-m1r-make-one-left-m1l/">M1R and M1L</a></li>
+				<li><a href="https://nimble-needles.com/tutorials/how-to-knit-german-short-rows/">German Short Rows</a></li>
+			</ul>
+			
+		</aside>
+		
+		<section>
+			<h2>Questions?</h2>
+            <p>whether you want to just chat about fiber arts, or if you have questions about a pattern, contact me!</p>
+
+			<form action="form_request.html" method="post">
+                <fieldset> <legend>Tell me about yourself!</legend>
+					<p>Let me know your name and email so I can get back to you.</p>
+					<label>Name <input type="text" name="name" required></label>
+					<label>Email <input type="text" name="email" required></label>
+				</fieldset>
+
+				<fieldset> <legend>Knitting, Crochet, Sewing, or Something Else?</legend>
+					<p>Tell me a little about what you would like to discuss.</p>
+					<label for="topic">Topic</label>
+					<select name="topic" id="topic">
+						<option value="select">What topic do you want to discuss?</option>
+						<option value="knitting">Knitting</option>
+						<option value="crochet">Crochet</option>
+						<option value="sewing">Sewing</option>
+						<option value="other">Something Else (please briefly explain your topic)</option>
+					</select>
+					<p>Only fill this out if your topic doesn't fall into any of the above categories and you chose Something Else:</p>
+					<textarea name="explain"></textarea>
+				</fieldset>
+
+				<fieldset> <legend>Pattern?</legend>
+					<p>Questions about a pattern you're working on? Need advice self-drafting something?</p>
+					<p>Select below what you're making:</p>
+					<label><input type="radio" name="type" value="garment">Garment</label>
+					<label><input type="radio" name="type" value="accessory">Accessory</label>
+					<label><input type="radio" name="type" value="amigurumi">Amigurumi</label>
+					<label><input type="radio" name="type" value="household">Household Item</label>
+					<p>Explain a little more what question you have, or what you would like to discuss about the above item:</p>
+					<textarea name="explainMore"></textarea>
+				</fieldset>
+
+				<fieldset> <legend>Submit or clear your information</legend>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Clear"><br>
+				</fieldset>
+            </form>
+		</section>
+	</main>
+	
+	<footer>
+		<p> &copy; 2025 What's Haley Making? </p>
+	</footer>
+	
+</body>
+</html>

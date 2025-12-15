@@ -1,0 +1,32 @@
+/* Haley Goldberg */
+
+section{
+	
+	& th, td{
+        padding: 0.278em;
+    }
+	& table {
+		margin-top: 1em;
+
+		tr:nth-child(odd) {background-color: #F5F5F5;}
+	}
+}
+
+#buttonSection {text-align: center;}
+
+/*I gave the buttons a class called button since there were two on this page that I wanted styled */
+.button{
+	background-color: #899385;
+	border: none;
+	color: white;
+	padding: 0.8em;
+	border-radius: 0.83em;
+}
+
+.button:hover{
+	box-shadow: 0 0 0.11em 0.11em #535951;
+}
+
+.button:focus{
+	box-shadow: 0 0 0.11em 0.11em #535951;
+}
